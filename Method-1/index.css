@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100%;
+    background-color: black;
+}
+
+.random-password-generator-container {
+    width: 450px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 40px 45px;
+    font-size: 40px;
+}
+
+.random-password-generator-text {
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.copy-to-clipboard,
+.generater-password {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.password-input-value-box {
+    display: flex;
+    justify-content: center;
+}
+
+.password-input-value {
+    height: 45px;
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+@media (max-width:560px) {
+    .random-password-generator-container {
+        width: auto;
+    }
+}
+
+@media (max-width:432px) {
+    .random-password-generator-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:354px) {
+    .random-password-generator-text {
+        font-size: 14px;
+    }
+}
